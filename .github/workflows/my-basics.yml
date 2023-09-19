@@ -11,10 +11,8 @@ jobs:
 
     steps:
       - name: Print Hello Message
-        run : echo "Hello, world from Testing"
-  my_deploy:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Print Hello Message
-        run : echo "Hello, world from Deploy job"
-    
+        run : echo "Hello, world from my_testing"
+      - name: list content
+        run : dir
+      - name: systeminfo
+        run: systeminfo
