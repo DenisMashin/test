@@ -1,4 +1,4 @@
-name: my-githubactions
+name: automation_building_releases
 
 on:
   push:
@@ -10,13 +10,9 @@ jobs:
     runs-on: windows-latest
 
     steps:
-      - name: Print Hello Message
-        run : echo "Hello, world from my_testing"
-      - name: list content
-        run : dir
       - name: clone my repo
         uses: actions/checkout@v1
-      - name: pyton setup
+      - name: python setup
         uses: actions/setup-python@v1
       - name: poetry-install
         uses: knowsuchagency/poetry-install@v1
