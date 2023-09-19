@@ -34,6 +34,6 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: 'github-pages'
-          path: ${{ runner.temp }}/app.tar
+          path: D:/a/test/test/app.tar
           retention-days: ${{ inputs.retention-days }}
           if-no-files-found: error
