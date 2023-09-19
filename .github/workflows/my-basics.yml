@@ -27,6 +27,6 @@ jobs:
       - name: list content
         run : dir build/helloworld/windows/app
       - name: run tar
-        run : tar
-      - name: run gzip
-        run: gzip
+        run : tar -c -f app.tar build/helloworld/windows/app/*.*
+      - name: list content
+        run: dir
