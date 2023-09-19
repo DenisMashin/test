@@ -15,7 +15,6 @@ jobs:
       - name: list content
         run : dir
       - name: clone my repo
-      - uses: actions/checkout@v1
       - uses: actions/setup-python@v1
       - uses: knowsuchagency/poetry-install@v1
         env:
