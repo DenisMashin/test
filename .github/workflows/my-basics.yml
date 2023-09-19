@@ -14,5 +14,7 @@ jobs:
         run : echo "Hello, world from my_testing"
       - name: list content
         run : dir
-      - name: systeminfo
-        run: systeminfo
+      - name: clone my repo
+        run: actions/checkout@v1
+      - name: list content
+        run: dir
