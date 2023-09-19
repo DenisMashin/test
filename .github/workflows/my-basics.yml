@@ -10,8 +10,8 @@ jobs:
     runs-on: windows
 
     steps:
-    - name: Print Hello Message
-      run : echo "Hello, world from Testing"
+      - name: Print Hello Message
+        run : echo "Hello, world from Testing"
   my_deploy:
     runs-on: ubuntu-latest
     steps:
