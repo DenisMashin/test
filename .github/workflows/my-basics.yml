@@ -22,3 +22,7 @@ jobs:
         uses: knowsuchagency/poetry-install@v1
         env:
           POETRY_VIRTUALENVS_CREATE: false
+      - name: briefcase_build
+        run : briefcase build
+      - name: list content
+        run: dir src
