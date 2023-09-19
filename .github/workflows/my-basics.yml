@@ -15,6 +15,6 @@ jobs:
       - name: list content
         run : dir
       - name: clone my repo
-        run: actions/checkout@v1
+        run: actions/checkout@v4
       - name: list content
         run: dir
